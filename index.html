@@ -29,8 +29,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-xs-12">
-                <h1>Kamila Szymczak</h1>
-                <h3>Portfolio</h3>
+                <h1>Portfolio Architektoniczne</h1>
+                <h3>Kamila Szymczak</h3>
             </div>
         </div>
     </div>
@@ -42,32 +42,58 @@
 <div id="content" class="content">
     <div class="container">
         <div class="row">
-            <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#home">O mnie</a></li>
-                <li><a data-toggle="tab" href="#menu1">Projekty</a></li>
-                <li><a data-toggle="tab" href="#menu2">Współpraca</a></li>
 
-            </ul>
+            <div class="tab">
+                <button class="tablinks" onclick="opensection(event, 'omnie')" id="defaultOpen">O mnie</button>
+                <button class="tablinks" onclick="opensection(event, 'projekty')">Projekty</button>
+                <button class="tablinks" onclick="opensection(event, 'wspolpraca')">Współpraca</button>
+            </div>
+            <div id="omnie" class="tabcontent">
+                <h3>O mnie</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed vehicula egestas nulla at semper. Praesent ac accumsan tortor.
+                    Donec dictum semper vestibulum.</p>
+            </div>
 
-            <div class="tab-content">
-                <div id="home" class="tab-pane fade in active">
-                    <h3>HOME</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div id="menu1" class="tab-pane fade">
-                    <h3>Menu 1</h3>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div id="menu2" class="tab-pane fade">
-                    <h3>Menu 2</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                </div>
+            <div id="projekty" class="tabcontent">
+                <h3>Projkety</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed vehicula egestas nulla at semper. Praesent ac accumsan tortor.
+                    Donec dictum semper vestibulum. Nam a leo non ipsum sagittis finibus.
+                    Etiam at fringilla libero, in placerat nisi.</p>
+            </div>
+
+            <div id="wspolpraca" class="tabcontent">
+                <h3>Współpraca</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed vehicula egestas nulla at semper. Praesent ac accumsan tortor.
+                    Donec dictum semper vestibulum.</p>
+            </div>
 
             </div>
         </div>
         </div>
     </div>
 </div>
+
+<script>
+    function opensection(evt, sectionName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(sectionName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
 
 <!-- End Second Section-->
 
