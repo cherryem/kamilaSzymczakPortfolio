@@ -82,6 +82,15 @@ body {
 .footer p {
     text-align: center;
 }
+
+/*scrool div*/
+div.scroll {
+    background-color: #EEEEEE;
+    width: 800px;
+    height: 300px;
+    overflow: scroll;
+}
+
 /* End Fourth Section*/
 
 /* Social Buttons*/
