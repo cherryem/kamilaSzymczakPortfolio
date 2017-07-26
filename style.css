@@ -13,6 +13,15 @@ body {
     font-family: 'Lato Light', sans-serif;
 }
 
+/*side bar*/
+#side_bar {
+    position: fixed;
+    background-color: #0a568c;
+    height: 100vh;
+    width: 30px;
+    float: left;
+
+}
 
 /* First Section*/
 .header{
