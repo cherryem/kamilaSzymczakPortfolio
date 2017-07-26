@@ -33,24 +33,24 @@ body {
     left: 0; /* On mouse-over, make the elements appear as they should */
 }
 
-/* The about link: 20px from the top with a green background */
+/*not made perfect because of height in px*/
 #a1 {
-    top: 20px;
+    top: calc(20px + 25%);
     background-color: #8d8d8d;
 }
 
 #a2 {
-    top: 80px;
+    top: calc(80px + 25%);
     background-color: #8d8d8d;
 }
 
 #a3 {
-    top: 140px;
+    top: calc(140px + 25%);
     background-color: #8d8d8d;
 }
 
 #a4 {
-    top: 200px;
+    top: calc(200px + 25%);
     background-color: #8d8d8d;
 }
 /*end navigation bar*/
