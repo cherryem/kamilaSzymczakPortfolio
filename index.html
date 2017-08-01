@@ -24,18 +24,27 @@
 </head>
 <body>
 
-<!--todo add leaning text-->
-<!--todo add links in page-->
+<!--todo fix leaning text-->
 <!--todo make separating lines in text-->
 <!--todo make smooth transition-->
 <!--todo example colors (gray)-->
 <div id="side_bar">
+    <div id="nav-anchor"></div>
+    <nav>
+        <ul>
+            <li><a href="#home_bar">Home</a></li>
+            <li><a href="#projects_bar">Projects</a></li>
+            <li><a href="#gallery_bar">Gallery</a></li>
+            <li><a href="#footer_bar">Footer</a></li>
+        </ul>
+    </nav>
 
 </div>
 
 <!-- First Section-->
 <div id="header" class="header">
     <div class="container">
+        <section id="home_bar">
         <div class="row">
             <div class="col-md-10 col-xs-12">
                 <h1>Portfolio Architektoniczne</h1>
@@ -45,6 +54,7 @@
                 <img src="graphic/Untitled-1-Recovered.png" alt="">
             </div>
         </div>
+        </section>
     </div>
 </div>
 
@@ -53,6 +63,7 @@
 <!-- Second Section-->
 <div id="content" class="content">
     <div class="container">
+        <section id="projects_bar">
         <div class="row">
 
             <div class="tab">
@@ -82,8 +93,8 @@
                     Sed vehicula egestas nulla at semper. Praesent ac accumsan tortor.
                     Donec dictum semper vestibulum.</p>
             </div>
-
         </div>
+        </section>
     </div>
 </div>
 
@@ -113,11 +124,13 @@
 <!-- Third Section-->
 <div id="gallery" class="gallery">
     <div class="container">
+        <section id="gallery_bar">
         <div class="row">
             <div class="col-md-12 col-xs-12">
                 <p>Gallery</p>
             </div>
         </div>
+        </section>
     </div>
 </div>
 
@@ -127,6 +140,7 @@
 <!-- Fourth Section-->
 <div id="footer" class="footer">
     <div class="container">
+        <section id="footer_bar">
         <div class="row">
             <div class="col-md-12 col-xs-12">
                 <p>Footer</p>
@@ -137,6 +151,7 @@
                         class="icon-google-plus"></i><span></span></a>
             </div>
         </div>
+        </section>
     </div>
 </div>
 
@@ -147,6 +162,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/navigationbar.js"></script>
 
 
 </body>
